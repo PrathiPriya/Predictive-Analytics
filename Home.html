@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+</head>
+<body>
+    <h1>Churn Prediction</h1>
+    <form action="/" method="post">
+        <label for="SeniorCitizen">Senior Citizen:</label>
+        <input type="number" name="SeniorCitizen"><br>
+        
+        <label for="MonthlyCharges">Monthly Charges:</label>
+        <input type="number" name="MonthlyCharges"><br>
+        
+        <label for="TotalCharges">Total Charges:</label>
+        <input type="number" name="TotalCharges"><br>
+        
+        <label for="Gender">Gender:</label>
+        <input type="text"  name="Gender"><br>
+        
+        <label for="Partner">Partner:</label>
+        <input type="text" name="Partner"><br>
+        
+        <label for="Dependents">Dependents:</label>
+        <input type="text" name="Dependents"><br>
+        
+        <label for="PhoneService">Phone Service:</label>
+        <input type="text" name="PhoneService"><br>
+        
+        <label for="MultipleLines">Multiple Lines:</label>
+        <input type="text" name="MultipleLines"><br>
+        
+        <label for="InternetService">Internet Service:</label>
+        <input type="text" name="InternetService"><br>
+        
+        <label for="OnlineSecurity">Online Security:</label>
+        <input type="text" name="OnlineSecurity"><br>
+        
+        <label for="OnlineBackup">Online Backup:</label>
+        <input type="text" name="OnlineBackup"><br>
+        
+        <label for="DeviceProtection">Device Protection:</label>
+        <input type="text" name="DeviceProtection"><br>
+        
+        <label for="TechSupport">Tech Support:</label>
+        <input type="text" name="TechSupport"><br>
+        
+        <label for="PaymentMethod">Payment Method:</label>
+        <input type="text" name="PaymentMethod"><br>
+        
+        <label for="StreamingTV">Streaming TV:</label>
+        <input type="text"  name="StreamingTV"><br>
+        
+        <label for="StreamingMovies">Streaming Movies:</label>
+        <input type="text"  name="StreamingMovies"><br>
+        
+        <label for="Contract">Contract:</label>
+        <input type="text" name="Contract"><br>
+        
+        <label for="PaperlessBilling">Paperless Billing:</label>
+        <input type="text" name="PaperlessBilling"><br>
+        
+        <label for="Tenure">Tenure:</label>
+        <input type="number" name="Tenure"><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if output1 %}
+        <h2>{{ output1 }}</h2>
+        <p>{{ output2 }}</p>
+    {% endif %}
+</body>
+</html>
